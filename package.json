@@ -1,0 +1,38 @@
+{
+  "name": "@rubar/lavish-themes",
+  "version": "0.1.0",
+  "description": "Six self-contained HTML theme shells — latex, terminal, water, swiss, handwritten, zine. No JS, no build step.",
+  "bin": {
+    "lavish-themes": "scripts/cli.js"
+  },
+  "files": [
+    "tier1",
+    "tier2",
+    "scripts/cli.js",
+    "README.md",
+    "THIRD-PARTY-NOTICES.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natekettles/lavish-themes.git"
+  },
+  "homepage": "https://github.com/natekettles/lavish-themes#readme",
+  "bugs": {
+    "url": "https://github.com/natekettles/lavish-themes/issues"
+  },
+  "keywords": [
+    "html",
+    "themes",
+    "stylesheet",
+    "no-js",
+    "lavish"
+  ],
+  "author": "Nathan Kettles",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}

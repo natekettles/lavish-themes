@@ -41,9 +41,18 @@ The gallery uses `<iframe srcdoc>` so each theme is inlined into one file. Works
 
 ## Use a theme
 
+From a git checkout:
+
 ```sh
 cp tier2/swiss.html my-brief.html
 # edit my-brief.html, replace the sample body content with yours
+open my-brief.html
+```
+
+Or via the CLI (works the same whether installed or `npx`'d):
+
+```sh
+lavish-themes copy swiss my-brief.html
 open my-brief.html
 ```
 
@@ -51,9 +60,22 @@ That's the whole flow. Each shell carries identical sample content so you can co
 
 ## Install
 
-For ad-hoc use, `git clone` is enough.
+**Via npm** (fastest, also gives you the `lavish-themes` CLI):
 
-For Claude Code agents (so the [`/publish`](https://github.com/natekettles/lavish-publish-cf) skill and any other lavish-aware agent can see the themes), run:
+```sh
+npm install -g @rubar/lavish-themes
+lavish-themes list
+lavish-themes copy swiss my-brief.html
+```
+
+Or one-off via npx:
+
+```sh
+npx @rubar/lavish-themes copy swiss my-brief.html
+npx @rubar/lavish-themes path latex          # absolute path to the theme HTML
+```
+
+**Via git** (for editing themes or rebuilding the gallery):
 
 ```sh
 ./scripts/install.sh
