@@ -1,8 +1,33 @@
+# OS / editor
 .DS_Store
 *.swp
 *.swo
+.vscode/
+.idea/
+
+# Python (build/gallery scripts)
 __pycache__/
 *.pyc
+
+# Node
+node_modules/
+*.log
+npm-debug.log*
+*.tgz
+coverage/
+.cache/
+
+# Secrets — never commit
+.env
+.env.*
+!.env.example
+.npmrc
+*.pem
+*.key
+id_rsa*
+
+# Claude Code session metadata
+.claude/
 
 # Local-only scaffolds for one-off screenshots
 _grid.html
